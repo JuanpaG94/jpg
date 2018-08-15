@@ -11,10 +11,13 @@
   <title>Juan Pablo González</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="https://fezvrasta.github.io/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
+
+  <!-- Import fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
@@ -24,8 +27,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">Juan Pablo González</h4>
-            <p class="text-white">Soy ingeniero de Software y un apasionado de la tecnologia y fotografía.
+            <h4 class="text-white">Sobre mí:</h4>
+            <p class="text-white text-muted">Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
               <br>Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
               tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo. ¿Quieres conocerme
               más? ¡Sigue leyendo!</p>
@@ -33,9 +36,9 @@
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contacto</h4>
             <ul class="list-unstyled">
-              <li><a href="#" class="btn btn-raised btn-secondary">Sígueme en LinkedIn</a></li>
-              <li><a href="#" class="btn btn-raised btn-secondary">Mírame en Infojobs</a></li>
-              <li><a href="#" class="btn btn-raised btn-secondary">Envíame un correo</a></li>
+              <li><a href="#" class="navOption">Sígueme en LinkedIn</a></li>
+              <li><a href="#" class="navOption">Mírame en Infojobs</a></li>
+              <li><a href="#" class="navOption">Envíame un correo</a></li>
             </ul>
           </div>
         </div>
@@ -44,14 +47,15 @@
 
     <div class="navbar navbar-dark bg-greyblack box-shadow">
       <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center" style="margin-left: 0% !important;">
           <img src="img/accountwhite.png" width="30" height="30" alt="">&nbsp;
           <strong>JPG</strong>
+            <a class="navOption" href="#curriculum"><strong>TRAYECTORIA</strong></a>
+            <a class="navOption" href="#design"><strong>PORTFOLIO</strong></a>
+            <a class="navOption" href="#photography"><strong>FOTOGRAFÍA</strong></a>
+        <a class="navOption" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+          aria-expanded="false" aria-label="Toggle navigation"><span class="text-white"><strong>SOBRE MÍ</strong></span>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </div>
 
@@ -59,32 +63,36 @@
 
   <main role="main">
 
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">Juan Pablo González</h1>
-        <p class="lead text-muted">Ingeniero de Software. Apasionado de la tecnología y la fotografía.</p>
-        <p>
-          <a href="#" class="btn btn-raised btn-info my-2">Ver mi Currículum</a>
-          <a href="#" class="btn btn-raised btn-secondary my-2">Contacta conmigo</a>
-        </p>
-      </div>
+    <section class="mainSection text-center">
+        <video autoplay muted loop id="bgVideo">
+            <source src="vid/main.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <p><img class="profilePicture" height="14%" width="14%" src="img/web/jpg.jpg"></p>
+            <h1 class="jumbotron-heading text-white"><span style="text-shadow: 0 0 6px #000000;">Juan Pablo González</span></h1>
+            <p class="lead text-white"><span style="text-shadow: 0 0 6px #000000;">Ingeniero de Software. Apasionado de la tecnología y la fotografía.</span></p>
+            <p>
+              <a href="#" class="btn btn-raised btn-info my-2">MI CURRÍCULUM</a>
+              <a href="#" class="btn btn-raised btn-secondary my-2">CONTACTA CONMIGO</a>
+            </p>
+          </div>
     </section>
 
     <div class="album py-5 bg-light">
       <div class="container">
-        <h4 class="text-dark">Mi portfolio</h4><br>
+        <h1 class="jumbotron-heading text-dark">Mi portfolio</h1><br>
         <div class="row">
 
           <!--CARD PORTFOLIO 1-->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Homely" alt="Card image cap">
+              <img class="card-img-top" src="img/web/thumb_homely.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Homely" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Homely es un proyecto realizado para la Universidad de Sevilla. Consiste en una plataforma
-                  de búsqueda y contratación de servicios domésticos, realizado con Python y Django Framework</p>
+                <p class="card-text">Homely es un proyecto realizado para la asignatura Ingeniería del Software y práctica profesional en la Universidad de Sevilla. Consiste en una plataforma
+                  de búsqueda y contratación de servicios domésticos, realizado con Python y Django Framework.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
+                      <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
                   </div>
                   <small class="text-muted">Informática</small>
                 </div>
@@ -95,10 +103,10 @@
           <!--CARD PORTFOLIO 2-->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Acme-music" alt="Card image cap">
+              <img class="card-img-top" src="img/web/thumb_acmemusic.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Acme-music" alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Acme-music es un proyecto realizado en un Hackathon para la asignatura Diseño y Pruebas en la Universidad de Sevilla. Consiste en una plataforma
-                  de música para artistas y usuarios que quieran encontrar o subir canciones. Es un proyecto básico que se realizón con el objetivo de medir las destrezas con Java y Spring Framework.</p>
+                <p class="card-text">Acme-music es un Hackathon para la asignatura Diseño y Pruebas en la Universidad de Sevilla. Consiste en una plataforma
+                  de canciones, muy sencilla. Se realizó con el objetivo de medir las destrezas con Java y Spring Framework.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
@@ -112,9 +120,9 @@
           <!--CARD PORTFOLIO 3-->
           <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Clústering" alt="Card image cap">
+                <img class="card-img-top" src="img/web/thumb_clustering.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Clústering" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Clústering es un trabajo realizado para la asignatura Inteligencia Artificial en la Universidad de Sevilla. Consiste en un sencillo programa que permite la importación de vídeos para, mediante técnicas de video-summarization, resumirlos a través de un algoritmo inteligente que calcula los fotogramas clave de un vídeo.</p>
+                  <p class="card-text">Clústering es un trabajo realizado para la asignatura Inteligencia Artificial en la Universidad de Sevilla. Consiste en un sencillo programa que permite resumir vídeos mediante técnicas de video-summarization para así obtener sus fotogramas clave.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
@@ -134,24 +142,25 @@
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
-        <a href="#">Volver arriba</a>
+          <a href="#"><button type="button" class="btn btn-info bmd-btn-fab">
+              <img src="img/chevron-up.png" height="50%" width="50%">
+          </button></a>
       </p>
-      <p>©2018. Creada por Juan Pablo González. Todos los derechos reservados.
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018. Creada por Juan Pablo González. Todos los derechos reservados.</span>
       </p>
-      <p>Desarrollada con la ayuda de <a href="https://fezvrasta.github.io/bootstrap-material-design">Bootstrap Material Design 4</a>, GitHub Pages y Visual Studio Code.
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con la ayuda de </span><span style="text-shadow: 0 0 6px #FFFFFF;"><a href="https://fezvrasta.github.io/bootstrap-material-design">Bootstrap Material Design 4</span></a><span style="text-shadow: 0 0 6px #000000;">, GitHub Pages y Visual Studio Code.</span>
       </p>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="https://fezvrasta.github.io/bootstrap-material-design/assets/js/vendor/popper.min.js"></script>
-  <script src="https://fezvrasta.github.io/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
-  <script src="https://fezvrasta.github.io/bootstrap-material-design/assets/js/vendor/holder.min.js"></script>
-</body>
+<!-- Bootstrap core de JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+</body>
 </html>

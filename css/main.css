@@ -7,6 +7,7 @@
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
   background-color: #fff;
+  position: relative;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -45,6 +46,11 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.mainSection {
+  padding: 4%;
+  position: relative;
+}
+
 .bg-bluedark{
   background-color: #263238;
 }
@@ -52,3 +58,120 @@ body{
 .bg-greyblack{
   background-color: #212121;
 }
+
+.navOption {
+  padding: 1.2%;
+  color: #fff;
+  text-decoration: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+.navOption:hover {
+  background-color: rgb(78, 78, 78);
+  color: #ffffff;
+  text-decoration: none;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-color: #263238;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(109, 109, 109, 0.19);
+}
+
+.card{
+  border-radius: 15px;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+.card:hover{
+  border-radius: 15px;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(109, 109, 109, 0.19);
+}
+
+.card-img-top{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  width:100%;
+}
+
+.profilePicture {
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* EFECTO FADE AL CARGAR */
+
+html {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* FIN EFECTO FADE AL CARGAR */
+
