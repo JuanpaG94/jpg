@@ -23,49 +23,66 @@
 </head>
 
 <body>
-  <header style="margin-top: 50px;">
-    <div class="collapse bg-greyblack collapseSobreMi" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <p class="text-white text-muted">Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
-              <br>Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
-              tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo. ¿Quieres conocerme
-              más? ¡Sigue leyendo!</p>
-          </div>
-          <div class="col-sm-4 offset-md-1 py-4">
-            <ul class="list-unstyled">
-              <li><a href="#" class="navOption">Sígueme en LinkedIn</a></li>
-              <li><a href="#" class="navOption">Mírame en Infojobs</a></li>
-              <li><a href="#" class="navOption">Envíame un correo</a></li>
-            </ul>
+  <header style="margin-top: 4%;">
+      <div class="collapse bg-greyblack collapseSobreMi" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <p class="text-white text-muted">Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
+                  <br>Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
+                  tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo. ¿Quieres conocerme
+                  más? ¡Sigue leyendo!</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="navOption">Sígueme en LinkedIn</a></li>
+                  <li><a href="#" class="navOption">Mírame en Infojobs</a></li>
+                  <li><a href="#" class="navOption">Envíame un correo</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="navbar navbar-dark bg-greyblack box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center" style="margin-left: 0% !important;">
-          <img src="img/accountwhite.png" width="30" height="30" alt="">&nbsp;
-          <strong>JPGG</strong>
-          <a class="navOption" href="#trayectoria"><strong>TRAYECTORIA</strong></a>
-          <a class="navOption" href="#proyectos"><strong>PROYECTOS</strong></a>
-          <a class="navOption" href="#fotografia"><strong>FOTOGRAFÍA</strong></a>
-          <a class="navOption" data-toggle="collapse" onclick="window.location.href='#'" data-target="#navbarHeader" aria-controls="navbarHeader"
-            aria-expanded="false" aria-label="Toggle navigation"><span class="text-white"><strong>SOBRE MÍ</strong></span>
-          </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-greyblack">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarJP" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarJP">
+        <ul class="nav nav-justified">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="img/accountwhite.png" width="30" height="30" alt="">&nbsp;JPGG</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#trayectoria">TRAYECTORIA</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#proyectos">PROYECTOS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#fotografia">FOTOGRAFÍA</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="collapse" 
+            onclick="window.location.href='#'" data-target="#navbarHeader" 
+            aria-controls="navbarHeader" aria-expanded="false" 
+            aria-label="Toggle navigation"><span class="text-white">SOBRE MÍ</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <!--lado derecho por si hace falta algo-->
+        </form>
       </div>
-    </div>
+    </nav>
 
   </header>
 
   <main role="main">
 
     <section class="mainSection text-center">
-      <video autoplay muted loop id="bgVideo">
-        <source src="vid/main2.mp4" type="video/mp4">
-      </video>
+      
+        <img id="bgVideo" src="vid/main.gif" type="gif">
+      
       <div class="container">
         <p><img class="profilePicture" height="14%" width="14%" src="img/web/jpg.jpg"></p>
         <h1 class="jumbotron-heading text-white"><span style="text-shadow: 0 0 6px #000000;">Juan Pablo González</span></h1>
@@ -224,12 +241,12 @@
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
   <!-- Arranca el modal de work in progress nada mas cargar la pagina -->
+  <!-- 
   <script type="text/javascript">
     $(window).on('load', function () {
       $('#modalWIP').modal('show');
     });
   </script>
-  <!-- Modal de WIP -->
   <div class="modal fade" id="modalWIP" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -253,9 +270,7 @@
         </div>
       </div>
     </div>
-  </div>
-
+  </div>-->
 
 </body>
-
 </html>

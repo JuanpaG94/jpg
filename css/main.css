@@ -46,6 +46,26 @@ footer p {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+} 
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+a:hover {
+  color: #2979ff;
+  text-decoration: none;
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
 }
 
 .collapseSobreMi{
@@ -75,37 +95,27 @@ footer{
   background-color: #212121;
 }
 
-.navOption {
-  padding: 1.2%;
-  color: #fff;
-  text-decoration: none;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition:.3s;
+.navbar, .nav-justified {
+  padding: 0.5%;
+  align-items: center;
 }
 
-.navOption:hover {
-  background-color: rgb(78, 78, 78);
-  color: #ffffff;
-  text-decoration: none;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-color: #263238;
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition:.3s;
+.nav-justified {
+  width: 98%;
+  }
+  .nav-justified > li {
+  float: none;
+  }
+  @media (min-width: 768px) {
+  
+      .nav-justified {
+          width: 97%;
+      }
+  }
+
+.nav-link:hover {
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(109, 109, 109, 0.19);
+  font-weight: bold;
 }
 
 .card{
@@ -134,13 +144,14 @@ footer{
 
 #bgVideo {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
   overflow: hidden;
   z-index: -100;
-  width:100%;
+  width: 100%;
+  height: 100%;
 }
 
 .profilePicture {
