@@ -11,7 +11,8 @@
   <title>Juan Pablo González</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
@@ -21,20 +22,17 @@
 </head>
 
 <body>
-
-  <header>
-    <div class="collapse bg-greyblack" id="navbarHeader">
+  <header style="margin-top: 50px;">
+    <div class="collapse bg-greyblack collapseSobreMi" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">Sobre mí:</h4>
             <p class="text-white text-muted">Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
               <br>Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
               tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo. ¿Quieres conocerme
               más? ¡Sigue leyendo!</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Contacto</h4>
             <ul class="list-unstyled">
               <li><a href="#" class="navOption">Sígueme en LinkedIn</a></li>
               <li><a href="#" class="navOption">Mírame en Infojobs</a></li>
@@ -50,12 +48,12 @@
         <a href="#" class="navbar-brand d-flex align-items-center" style="margin-left: 0% !important;">
           <img src="img/accountwhite.png" width="30" height="30" alt="">&nbsp;
           <strong>JPG</strong>
-            <a class="navOption" href="#curriculum"><strong>TRAYECTORIA</strong></a>
-            <a class="navOption" href="#design"><strong>PORTFOLIO</strong></a>
-            <a class="navOption" href="#photography"><strong>FOTOGRAFÍA</strong></a>
-        <a class="navOption" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
-          aria-expanded="false" aria-label="Toggle navigation"><span class="text-white"><strong>SOBRE MÍ</strong></span>
-        </a>
+          <a class="navOption" href="#trayectoria"><strong>TRAYECTORIA</strong></a>
+          <a class="navOption" href="#proyectos"><strong>PROYECTOS</strong></a>
+          <a class="navOption" href="#fotografia"><strong>FOTOGRAFÍA</strong></a>
+          <a class="navOption" data-toggle="collapse" onclick="window.location.href='#'" data-target="#navbarHeader" aria-controls="navbarHeader"
+            aria-expanded="false" aria-label="Toggle navigation"><span class="text-white"><strong>SOBRE MÍ</strong></span>
+          </a>
       </div>
     </div>
 
@@ -64,49 +62,96 @@
   <main role="main">
 
     <section class="mainSection text-center">
-        <video autoplay muted loop id="bgVideo">
-            <source src="vid/main.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <p><img class="profilePicture" height="14%" width="14%" src="img/web/jpg.jpg"></p>
-            <h1 class="jumbotron-heading text-white"><span style="text-shadow: 0 0 6px #000000;">Juan Pablo González</span></h1>
-            <p class="lead text-white"><span style="text-shadow: 0 0 6px #000000;">Ingeniero de Software. Apasionado de la tecnología y la fotografía.</span></p>
-            <p>
-              <a href="#" class="btn btn-raised btn-info my-2">MI CURRÍCULUM</a>
-              <a href="#" class="btn btn-raised btn-secondary my-2">CONTACTA CONMIGO</a>
-            </p>
-          </div>
+      <video autoplay muted loop id="bgVideo">
+        <source src="vid/main2.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <p><img class="profilePicture" height="14%" width="14%" src="img/web/jpg.jpg"></p>
+        <h1 class="jumbotron-heading text-white"><span style="text-shadow: 0 0 6px #000000;">Juan Pablo González</span></h1>
+        <p class="lead text-white"><span style="text-shadow: 0 0 6px #000000;">Ingeniero de Software. Apasionado de la tecnología
+            y la fotografía.</span></p>
+        <p>
+          <a href="#" class="btn btn-raised btn-info my-2">MI CURRÍCULUM</a>
+          <a href="mailto:jpaglez.fujitsu@gmail.com" target="_blank" class="btn btn-raised btn-secondary my-2">CONTACTA CONMIGO</a>
+        </p>
+      </div>
     </section>
 
     <div class="album py-5 bg-light">
       <div class="container">
-        <h1 class="jumbotron-heading text-dark">Mi portfolio</h1><br>
+        <h1 id="trayectoria" class="jumbotron-heading text-dark">Trayectoria</h1><br>
+      </div>
+      <div class="container">
+        WIP
+      </div>
+    </div>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h1 id="proyectos" class="jumbotron-heading text-dark">Portfolio: Mis proyectos</h1><br>
         <div class="row">
 
           <!--CARD PORTFOLIO 1-->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="img/web/thumb_homely.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Homely" alt="Card image cap">
+              <img class="card-img-top" src="img/web/thumb_homely.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Homely"
+                alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Homely es un proyecto realizado para la asignatura Ingeniería del Software y práctica profesional en la Universidad de Sevilla. Consiste en una plataforma
-                  de búsqueda y contratación de servicios domésticos, realizado con Python y Django Framework.</p>
+                <p class="card-text">Homely es un proyecto para Ingeniería del Software y Práctica Profesional en la Universidad
+                  de Sevilla.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                      <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
+                    <a class="btn btn-raised btn-secondary my-2" href="#" data-target="#modalHomely" data-toggle="modal">Más
+                      información</a>
                   </div>
                   <small class="text-muted">Informática</small>
                 </div>
               </div>
             </div>
+            <!--MODAL 1-->
+            <div class="modal fade" id="modalHomely" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Homely</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="">
+                      <img class="card-img-top" src="img/web/thumb_homely.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Homely"
+                        alt="Card image cap">
+                      <div class="card box-shadow">
+                        <p class="card-text">Homely es un proyecto realizado para la asignatura 'Ingeniería del Software
+                          y Práctica Profesional' en la Universidad de Sevilla.
+                          <br>Consiste en una plataforma de búsqueda y contratación de servicios domésticos.
+                          <br><br>Este proyecto se realizó simulando el nacimiento, progreso, trabajo y lanzamiento de una
+                          StartUp, con su posterior presentación ante profesores y algunas empresas que asistieron al evento
+                          StartUS, celebrado en la ETSII.
+                          <br><br>Tecnologías: Python 3, Django Framework, Bootstrap, Travis CI, Heroku, Visual Studio Code.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a target="_blank" class="btn btn-info my-2" href="https://homelyapp.tk">Entrar a Homely</a>&nbsp;
+                    <a target="_blank" class="btn btn-danger my-2" href="https://startus.tk">Visitar StartUS</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!--CARD PORTFOLIO 2-->
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="img/web/thumb_acmemusic.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Acme-music" alt="Card image cap">
+              <img class="card-img-top" src="img/web/thumb_acmemusic.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Acme-music"
+                alt="Card image cap">
               <div class="card-body">
-                <p class="card-text">Acme-music es un Hackathon para la asignatura Diseño y Pruebas en la Universidad de Sevilla. Consiste en una plataforma
-                  de canciones, muy sencilla. Se realizó con el objetivo de medir las destrezas con Java y Spring Framework.</p>
+                <p class="card-text">Acme-Music es un Hackathon para la asignatura 'Diseño y Pruebas' en la Universidad de
+                  Sevilla.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
@@ -119,19 +164,30 @@
 
           <!--CARD PORTFOLIO 3-->
           <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/web/thumb_clustering.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Clústering" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Clústering es un trabajo realizado para la asignatura Inteligencia Artificial en la Universidad de Sevilla. Consiste en un sencillo programa que permite resumir vídeos mediante técnicas de video-summarization para así obtener sus fotogramas clave.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
-                    </div>
-                    <small class="text-muted">Informática</small>
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="img/web/thumb_clustering.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Clústering"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Clústering es un trabajo para la asignatura 'Inteligencia Artificial' en la Universidad
+                  de Sevilla.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
                   </div>
+                  <small class="text-muted">Informática</small>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <h1 id="fotografia" class="jumbotron-heading text-dark">Portfolio: Fotografía</h1><br>
+            </div>
+            <div class="container">
+              WIP
+            </div>
+          </div>
 
         </div>
       </div>
@@ -142,25 +198,63 @@
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
-          <a href="#"><button type="button" class="btn btn-info bmd-btn-fab">
-              <img src="img/chevron-up.png" height="50%" width="50%">
+        <a href="#"><button type="button" class="btn btn-info bmd-btn-fab">
+            <img src="img/chevron-up.png" height="50%" width="50%">
           </button></a>
       </p>
-      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018. Creada por Juan Pablo González. Todos los derechos reservados.</span>
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018. Creada por Juan Pablo González. Todos los
+          derechos reservados.</span>
       </p>
-      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con la ayuda de </span><span style="text-shadow: 0 0 6px #FFFFFF;"><a href="https://fezvrasta.github.io/bootstrap-material-design">Bootstrap Material Design 4</span></a><span style="text-shadow: 0 0 6px #000000;">, GitHub Pages y Visual Studio Code.</span>
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con la ayuda de <a href="https://fezvrasta.github.io/bootstrap-material-design">Bootstrap
+            Material Design 4</a>, GitHub Pages y Visual Studio Code.</span>
       </p>
     </div>
   </footer>
 
-<!-- Bootstrap core de JavaScript
+  <!-- Bootstrap core de JavaScript
   ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+  <!-- Arranca el modal de work in progress nada mas cargar la pagina -->
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#modalWIP').modal('show');
+    });
+  </script>
+  <!-- Modal de WIP -->
+  <div class="modal fade" id="modalWIP" tabindex="-1" role="dialog" aria-labelledby="wipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vista móvil no disponible del todo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="">
+            <div class="card-body">
+              <p class="card-text">Esta web está todavía en progreso de construcción, es recomendable que la veas desde PC.
+                <br><br>La vista móvil todavía no está desarrollada por completo y podría haber fallos en su visualización.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">De acuerdo, cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
+
 </html>

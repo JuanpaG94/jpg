@@ -41,9 +41,25 @@ footer p {
 
 
 /* CUSTOM CSS STYLES MODIFIED BY JPG */
+.navbar{
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.collapseSobreMi{
+  overflow: hidden;
+  width: 100%; /* Full width */
+  margin-top: 50px;
+}
 
 body{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer{
+  background-color: #212121;
 }
 
 .mainSection {
@@ -108,7 +124,6 @@ body{
   -moz-transition:.3s;
   -webkit-transition:.3s;
   transition:.3s;
-  cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(109, 109, 109, 0.19);
 }
 
@@ -118,7 +133,7 @@ body{
 }
 
 #bgVideo {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -131,6 +146,13 @@ body{
 .profilePicture {
   border-radius: 50%; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-content {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 
