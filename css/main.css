@@ -37,3 +37,18 @@ footer p {
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+/* CUSTOM CSS STYLES MODIFIED BY JPG */
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bg-bluedark{
+  background-color: #263238;
+}
+
+.bg-greyblack{
+  background-color: #212121;
+}
