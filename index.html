@@ -20,57 +20,37 @@
 
   <!-- Import fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+      @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+  </style>
 </head>
 
 <body>
   <header style="margin-top: 4%;">
-      <div class="collapse bg-greyblack collapseSobreMi" id="navbarHeader">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <p class="text-white text-muted">Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
-                  <br>Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
-                  tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo. ¿Quieres conocerme
-                  más? ¡Sigue leyendo!</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4">
-                <ul class="list-unstyled">
-                  <li><a href="#" class="navOption">Sígueme en LinkedIn</a></li>
-                  <li><a href="#" class="navOption">Mírame en Infojobs</a></li>
-                  <li><a href="#" class="navOption">Envíame un correo</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-greyblack">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarJP" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-greyblack">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+          &nbsp;&nbsp;<img src="img/accountwhite.png" width="28" height="28" alt="">&nbsp;JPGG&nbsp;&nbsp;
+      </a>
+      <button class="navbar-toggler collapsed" style="border-color: transparent !important;" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="img/menu.png" width="28" height="28" alt=""></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarJP">
-        <ul class="nav nav-justified">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><img src="img/accountwhite.png" width="30" height="30" alt="">&nbsp;JPGG</a>
+
+      <div class="navbar-collapse collapse" id="navbarsExample05">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#trayectoria">&nbsp;&nbsp;&nbsp;Trayectoria&nbsp;&nbsp;&nbsp;</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#trayectoria">TRAYECTORIA</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">&nbsp;&nbsp;&nbsp;Proyectos&nbsp;&nbsp;&nbsp;</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#proyectos">PROYECTOS</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#fotografia">FOTOGRAFÍA</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" data-toggle="collapse" 
-            onclick="window.location.href='#'" data-target="#navbarHeader" 
-            aria-controls="navbarHeader" aria-expanded="false" 
-            aria-label="Toggle navigation"><span class="text-white">SOBRE MÍ</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#fotografia">&nbsp;&nbsp;&nbsp;Fotografía&nbsp;&nbsp;&nbsp;</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-md-0">
-          <!--lado derecho por si hace falta algo-->
+          <a class="nav-link" href="#"><img src="img/briefcase-search.png" width="28" height="28" alt="">&nbsp;&nbsp;</a>
         </form>
       </div>
     </nav>
@@ -85,28 +65,39 @@
       
       <div class="container">
         <p><img class="profilePicture" height="14%" width="14%" src="img/web/jpg.jpg"></p>
-        <h1 class="jumbotron-heading text-white"><span style="text-shadow: 0 0 6px #000000;">Juan Pablo González</span></h1>
-        <p class="lead text-white"><span style="text-shadow: 0 0 6px #000000;">Ingeniero de Software. Apasionado de la tecnología
+        <h1 class="jumbotron-heading text-white"><span class="robotoMono" style="text-shadow: 0 0 6px #000000; font-size: 70%;">Juan Pablo González</span></h1>
+        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 0 0 6px #000000; font-size: 70%;">Ingeniero de Software. Apasionado de la tecnología
             y la fotografía.</span></p>
         <p>
-          <a href="#" class="btn btn-raised btn-info my-2">MI CURRÍCULUM</a>
-          <a href="mailto:jpaglez.fujitsu@gmail.com" target="_blank" class="btn btn-raised btn-secondary my-2">CONTACTA CONMIGO</a>
+          <a href="#" class="btn btn-raised btn-info my-2">Descargar Currículum</a>
+          <a href="mailto:jpaglez.fujitsu@gmail.com" target="_blank" class="btn btn-raised btn-secondary my-2">Contacta conmigo</a>
         </p>
       </div>
     </section>
+
+    <!-- SECCIÓN SOBRE MI 
+    <div class="bg-greyblack" id="navbarHeader">
+        <div class="container">
+            <div class="col-sm-10 col-md-12 py-3 px-2">
+              <p class="text-white text-muted">
+            </div>
+        </div>
+    </div>-->
 
     <div class="album py-5 bg-light">
       <div class="container">
         <h1 id="trayectoria" class="jumbotron-heading text-dark">Trayectoria</h1><br>
       </div>
       <div class="container">
-        WIP
+          Soy Ingeniero de Software y un apasionado de la tecnologia y fotografía.
+          Una persona sociable, comunicativa, resolutiva y proactiva. Me encanta salir a tomar algo en algún lugar
+          tranquilo, pasar tiempo con los míos y estar informado de todo lo que ocurre en el mundo.
       </div>
     </div>
 
     <div class="album py-5 bg-light">
       <div class="container">
-        <h1 id="proyectos" class="jumbotron-heading text-dark">Portfolio: Mis proyectos</h1><br>
+        <h1 id="proyectos" class="jumbotron-heading text-dark">Proyectos</h1><br>
         <div class="row">
 
           <!--CARD PORTFOLIO 1-->
@@ -119,8 +110,7 @@
                   de Sevilla.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a class="btn btn-raised btn-secondary my-2" href="#" data-target="#modalHomely" data-toggle="modal">Más
-                      información</a>
+                    <a class="btn btn-raised btn-info my-2" href="#" data-target="#modalHomely" data-toggle="modal">Más información</a>
                   </div>
                   <small class="text-muted">Informática</small>
                 </div>
@@ -146,15 +136,14 @@
                           <br>Consiste en una plataforma de búsqueda y contratación de servicios domésticos.
                           <br><br>Este proyecto se realizó simulando el nacimiento, progreso, trabajo y lanzamiento de una
                           StartUp, con su posterior presentación ante profesores y algunas empresas que asistieron al evento
-                          StartUS, celebrado en la ETSII.
+                          StartUS, celebrado en la Escuela Técnica Superior de Ingeniería Informática.
                           <br><br>Tecnologías: Python 3, Django Framework, Bootstrap, Travis CI, Heroku, Visual Studio Code.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="modal-footer">
-                    <a target="_blank" class="btn btn-info my-2" href="https://homely-web.herokuapp.com/es/index/">Entrar a Homely</a>&nbsp;
-                    <a target="_blank" class="btn btn-danger my-2" href="http://startus.tk">Visitar StartUS</a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <div class="modal-footer mr-auto">
+                    <a target="_blank" class="btn btn-info my-2" href="https://homely-web.herokuapp.com/es/index/"><strong>Entrar a Homely</strong></a>&nbsp;
+                    <button type="button" class="btn btn-secondary my-2" data-dismiss="modal"><strong>Cerrar</strong></button>
                   </div>
                 </div>
               </div>
@@ -172,7 +161,7 @@
                   Sevilla.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
+                    <button type="button" class="btn btn-raised btn-info my-2">Más información</button>
                   </div>
                   <small class="text-muted">Informática</small>
                 </div>
@@ -190,7 +179,7 @@
                   de Sevilla.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-raised btn-secondary my-2">Más información</button>
+                    <button type="button" class="btn btn-raised btn-info my-2">Más información</button>
                   </div>
                   <small class="text-muted">Informática</small>
                 </div>
@@ -200,10 +189,10 @@
 
           <div class="album py-5 bg-light">
             <div class="container">
-              <h1 id="fotografia" class="jumbotron-heading text-dark">Portfolio: Fotografía</h1><br>
+              <h1 id="fotografia" class="jumbotron-heading text-dark">Fotografía</h1><br>
             </div>
             <div class="container">
-              WIP
+              Próximamente
             </div>
           </div>
 
@@ -212,7 +201,7 @@
     </div>
 
   </main>
-
+  <!-- FOOTER -->
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
@@ -220,11 +209,10 @@
             <img src="img/chevron-up.png" height="50%" width="50%">
           </button></a>
       </p>
-      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018. Creada por Juan Pablo González. Todos los
-          derechos reservados.</span>
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018 · Creada por Juan Pablo González · Todos los
+          derechos reservados</span>
       </p>
-      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con la ayuda de <a href="https://fezvrasta.github.io/bootstrap-material-design">Bootstrap
-            Material Design 4</a>, GitHub Pages y Visual Studio Code.</span>
+      <p class="text-muted"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con la ayuda de Bootstrap MD 4 by FezVrasta, GitHub Pages y VS Code</span>
       </p>
     </div>
   </footer>
