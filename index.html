@@ -25,6 +25,7 @@
     @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
     @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
   </style>
+
 </head>
 
 <body>
@@ -289,13 +290,6 @@
   <!-- =================================================================== -->
   <!-- Scripts, placed at the end of the document so the pages load faster -->
 
-  <script type="text/javascript">
-      $('html').addClass('loading-in-progress');
-      $(window).on('load',function(){
-        $('html').removeClass('loading-in-progress');
-      });
-  </script>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
@@ -307,10 +301,6 @@
   <!-- Import materialize.js -->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
-    // ScrollSpy
-    M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
-      scrollOffset: 0
-    });
     //Dropdown
     M.Dropdown.init(document.querySelector('.lang-drop'), {
       coverTrigger: false

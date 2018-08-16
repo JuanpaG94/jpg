@@ -41,33 +41,6 @@ footer p {
 
 
 /* CUSTOM CSS STYLES MODIFIED BY JPG */
-
-/* Pantalla de carga splash screen */
-.loading-in-progress::before { /* background cover */
-	content: '';
-	position: fixed;
-	left: 0; right: 0; top: 0; bottom: 0;
-	background-color: white;
-	z-index: 100000;
-}
- 
-.loading-in-progress::after { /* spinner */
-	content: '';
-	position: fixed;
-	left: 50vw; top: 50vh;
-	transform: translate(-50%,-50%);
-	width: 100px; height: 100px;
-	background-image: url('spinner-design.svg');
-	animation: 0.5s infinite forwards spin-animation;
-	z-index: 100000;
-}
- 
-@keyframes spin-animation { /* make the spinner spin */
-	0% {transform: rotate(0deg)}
-	100% {transform: rotate(360deg)}
-}
-/* Fin pantalla de carga */
-
 .robotoMono{
   font-family: 'Roboto Mono', monospace !important;
 }
