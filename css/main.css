@@ -76,15 +76,23 @@ footer{
 
 .navbar{
   padding: 1%;
-  top: 0px;
+  top: -2px;
   position: fixed;
   width: 100%;
+}
+
+.nav-logo:hover{
+  text-decoration: none;
+  color: #03a9f4;
+  filter: #03a9f4;
+  -webkit-filter: #03a9f4(100%);
 }
 
 .nav-link{
   font-size: 120% !important;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
+  text-decoration: none;
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -97,6 +105,8 @@ footer{
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff !important;
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -128,8 +138,13 @@ footer{
   border-top-right-radius: 15px;
 }
 
+.card-img-bottom{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 #bgVideo {
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0;
   bottom: 0;
@@ -138,6 +153,7 @@ footer{
   z-index: -100;
   width: 100%;
   height: 100%;
+  object-fit: fill;
 }
 
 .profilePicture {
@@ -206,3 +222,49 @@ html {
 
 /* FIN EFECTO FADE AL CARGAR */
 
+/* SOME RESOURCES FROM MATERIALIZE CSS */
+.materialboxed {
+  display: block;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  position: relative;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.materialboxed:hover:not(.active) {
+  opacity: .8;
+}
+
+.materialboxed.active {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+#materialbox-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #292929;
+  z-index: 1000;
+  will-change: opacity;
+}
+
+.materialbox-caption {
+  position: fixed;
+  display: none;
+  color: #fff;
+  line-height: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0% 15%;
+  height: 50px;
+  z-index: 1000;
+  -webkit-font-smoothing: antialiased;
+}
