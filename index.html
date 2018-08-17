@@ -30,10 +30,10 @@
 
 <body>
 
-  <header style="margin-top: 4%;">
+  <header style="margin-top: 4%;" class="scrollspy" id="pageTop">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-greyblack">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="#pageTop">
         &nbsp;&nbsp;<img src="img/accountwhite.png" width="28" height="28" alt="">&nbsp;JPGG&nbsp;&nbsp;
       </a>
       <button class="navbar-toggler collapsed" style="border-color: transparent !important;" type="button" data-toggle="collapse"
@@ -57,6 +57,7 @@
           <a class="nav-logo" href="http://www.infojobs.net/juanpablo-gonzalez-8.prf">&nbsp;&nbsp;<img src="img/infojobs.png"
               width="46%" height="46%" alt="Mi perfil de InfoJobs"></a>
           <a class="nav-logo" href="#"><img src="img/linkedin.png" width="58%" height="58%" alt="Sígueme en LinkedIn"></a>
+          <a class="nav-logo" href="https://github.com/juanpag94"><img src="img/github-circle.png" width="58%" height="58%" alt="Mi perfil de GitHub"></a>
           <a class="nav-logo" href="https://www.instagram.com/srjpg"><img src="img/instagram.png" width="58%" height="58%"
               alt="Sígueme en Instagram"></a>
         </form>
@@ -98,7 +99,7 @@
     </div>
 
     <div class="album py-3 bg-light">
-      <div class="container" id="trayectoria">
+      <div class="container scrollspy" id="trayectoria">
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-dark"><span class="robotoMono">Trayectoria</span></h1>
@@ -113,7 +114,7 @@
     </div>
 
     <div class="album py-3 bg-light">
-      <div class="container" id="proyectos">
+      <div class="container scrollspy" id="proyectos">
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-dark"><span class="robotoMono">Proyectos</span></h1>
@@ -213,7 +214,7 @@
     </div>
 
     <div class="album py-3 bg-light">
-      <div class="container" id="fotografia">
+      <div class="container scrollspy" id="fotografia">
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-dark"><span class="robotoMono">Fotografía</span></h1>
@@ -274,9 +275,9 @@
   <footer class="text-muted">
     <div class="container">
       <p class="float-right">
-        <a href="#"><button type="button" class="btn btn-info bmd-btn-fab">
-            <img src="img/chevron-up.png" height="50%" width="50%">
-          </button></a>
+        <a href="#pageTop" class="btn btn-info bmd-btn-fab">
+            <img src="img/chevron-up.png" height="45%" width="45%" style="margin-top: 27%">
+          </a>
       </p>
       <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">©2018 · Creada por Juan Pablo González · Todos los
           derechos reservados</span>
@@ -301,6 +302,10 @@
   <!-- Import materialize.js -->
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
+    // ScrollSpy
+    M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
+      scrollOffset: 0
+     });
     //Dropdown
     M.Dropdown.init(document.querySelector('.lang-drop'), {
       coverTrigger: false
