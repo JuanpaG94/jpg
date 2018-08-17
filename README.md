@@ -1,11 +1,17 @@
 # JPG Personal Website
-- Repository dedicated to the development of my personal website.
+- Repository dedicated to development of my personal & business website.
 
 # Technologies
-- Main: HTML, CSS, JS
+- Main: HTML5, CSS3, JS
+- IDE: Visual Studio Code
+- Hosting: GitHub Pages
 
-- Material Design Bootstrap by FezVrasta
+# UI/UX:
+- Material Design Bootstrap v4.0 by FezVrasta:
 https://fezvrasta.github.io/bootstrap-material-design/
+- Some resources from MaterializeCSS: https://materializecss.com/
 
-MD Bootstrap is designed and built by @FezVrasta with the help of our contributors.
+Material Design Bootstrap is designed and built by @FezVrasta with the help of our contributors.
 Currently v4.1.1. Code licensed MIT, docs CC BY 3.0.
+
+MaterializeCSS is designed and built by Materialize team, students from Carnegie Mellon University.
