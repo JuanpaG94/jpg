@@ -152,6 +152,8 @@ footer{
   overflow: hidden;
   z-index: -100;
   object-fit: fill;
+  width: 100%;
+  height: 100%;
 }
 
 .profilePicture {
@@ -164,6 +166,10 @@ footer{
   .profilePicture{
     height: 36%;
     width: 36%;
+  }
+  #bgVideo{
+  	left: unset !important;
+  	width: unset !important;
   }
 }
 
