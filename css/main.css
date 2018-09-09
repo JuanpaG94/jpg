@@ -157,18 +157,22 @@ footer{
 }
 
 .profilePicture {
-  opacity: 0.7;
+  opacity: 0.85;
   border-radius: 50%; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (max-width: 768px){
   .profilePicture{
-    height: 36%;
-    width: 36%;
+    height: 35%;
+    width: 35%;
+  }
+  .scrollDown{
+    height: 30% !important;
+    width: 30% !important;
   }
   #bgVideo{
-  	left: unset !important;
+  	left: -100% !important;
   	width: unset !important;
   }
 }
