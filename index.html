@@ -46,41 +46,7 @@
 
   <header style="margin-top: 4%;" class="scrollspy" id="pageTop">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-greyblack">
-      <a class="navbar-brand d-flex align-items-center" href="#pageTop">
-        &nbsp;&nbsp;<img src="img/accountwhite.png" width="28" height="28" alt="">&nbsp;JPGG&nbsp;&nbsp;
-      </a>
-      <button class="navbar-toggler collapsed" style="border-color: transparent !important;" type="button" data-toggle="collapse"
-        data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-        <span><img src="img/menu.png" width="28" height="28" alt=""></span>
-      </button>
-  
-      <div class="navbar-collapse collapse" id="navbarsExample05">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#sobremi">&nbsp;&nbsp;&nbsp;Sobre mí&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#trayectoria">&nbsp;&nbsp;&nbsp;Experiencia&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">&nbsp;&nbsp;&nbsp;Proyectos&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#fotografia">&nbsp;&nbsp;&nbsp;Fotografía&nbsp;&nbsp;&nbsp;</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-md-0 d-flex align-items-center">
-          <a class="nav-logo" href="http://www.infojobs.net/juanpablo-gonzalez-8.prf">&nbsp;&nbsp;<img src="img/infojobs.png"
-              width="46%" height="46%" alt="Mi perfil de InfoJobs"></a>
-          <a class="nav-logo" href="#"><img src="img/linkedin.png" width="58%" height="58%" alt="Sígueme en LinkedIn"></a>
-          <a class="nav-logo" href="https://github.com/juanpag94"><img src="img/github-circle.png" width="58%" height="58%"
-              alt="Mi perfil de GitHub"></a>
-          <a class="nav-logo" href="https://www.instagram.com/srjpg"><img src="img/instagram.png" width="58%" height="58%"
-              alt="Sígueme en Instagram"></a>
-        </form>
-      </div>
-    </nav>
+    <div w3-include-html="views/navbar.html"></div>
   </header>
 
   <main role="main">
@@ -92,9 +58,9 @@
         <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
         <h1 class="jumbotron-heading text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:white;">Juan
             Pablo González</span></h1>
-        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%; color:white;">Software / Computer Science Engineer</span></p>
+        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%; color:white;">Software & Computer Science Engineer</span></p>
         <div class="align-items-center">
-          <a tabindex="0" class="btn btn-raised btn-dark" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom"
+          <a tabindex="0" class="btn btn-raised btn-secondary" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom"
             title="Gracias por contactar" data-content="Gracias por enviarme un mail, contestaré lo más pronto posible, ¡lo prometo!"
             href="mailto:jpaglez.fujitsu@gmail.com" target="_blank">Contactar  /  solicitar currículum</a>
         </div>
@@ -110,36 +76,36 @@
       </div>
     </div>
 
-    <div class="album py-3 bg-light">
+    <div class="album bg-light">
       <div class="container scrollspy" id="sobremi">
         <br>
-        <hr><br>
-        <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Sobre mí.</span></h1>
-        <p class="text-muted"><span class="robotoMono">Este soy yo, esto es lo que sé.</span></p><br>
+        <h1 class="jumbotron-heading text-center">
+        <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">SOBRE MÍ</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Lo que sé y lo que me gusta hacer.</b></span></p><br>
       </div>
       <div class="container">
-        work in progress
+        <div w3-include-html="views/aboutme.html"></div>
       </div>
     </div>
 
-    <div class="album py-3 bg-light">
+    <div class="album bg-light">
       <div class="container scrollspy" id="trayectoria">
         <br>
         <hr><br>
-        <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Experiencias.</span></h1>
-        <p class="text-muted"><span class="robotoMono">Mi experiencia laboral hasta el momento.</span></p><br>
+        <h1 class="jumbotron-heading text-center">
+        <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">EXPERIENCIA</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Toda mi trayectoria hasta el momento. En orden descendente.</b></span></p><br>
       </div>
-      <div class="container">
         <div w3-include-html="views/timeline.html"></div>
-      </div>
     </div>
 
-    <div class="album py-3 bg-light">
-      <div class="container scrollspy" id="proyectos">
+    <div class="album bg-light">
+      <div class="container scrollspy" id="portfolio">
         <br>
         <hr><br>
-        <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Proyectos.</span></h1>
-        <p class="text-muted"><span class="robotoMono">Toca en 'ver más' para leer todo el detalle.</span></p><br>
+        <h1 class="jumbotron-heading text-center">
+        <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">PORTFOLIO</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Los proyectos en los que he estado trabajando.</b></span></p><br>
         <div class="row">
           <!--CARD PORTFOLIO 1-->
           <div class="col-md-4">
@@ -291,12 +257,13 @@
       </div>
     </div>
 
-    <div class="album py-3 bg-light">
+    <div class="album bg-light">
       <div class="container scrollspy" id="fotografia">
         <br>
         <hr><br>
-        <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Fotografía.</span></h1>
-        <p class="text-muted"><span class="robotoMono">Toca en una foto para verla en pantalla completa.</span></p><br>
+        <h1 class="jumbotron-heading text-center">
+        <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">FOTOGRAFÍA</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Me gusta aprender sobre fotografía y hacerlas en mi tiempo libre.</b></span></p><br>
         <div class="row">
           <!-- GALERIA DE FOTOS -->
           <div class="col-md-4">
@@ -344,26 +311,18 @@
           <!-- FIN COL-->
         </div>
         <br>
-        <hr><br>
       </div>
     </div>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="text-muted">
-    <div class="container">
-      <p class="float-right">
-        <a href="#pageTop" class="btn btn-info bmd-btn-fab">
-          <img src="img/chevron-up.png" height="45%" width="45%" style="margin-top: 27%">
-        </a>
-      </p>
-      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">© 2018  ·  Creada por Juan Pablo González  ·  Todos los
+  <footer class="bg-greyblack text-center" style="padding-top:2%; padding-bottom:1%;">
+      <p class="text-white"><span style="text-shadow: 0 0 6px #000000;">© 2018  ·  Juan Pablo González  ·  Todos los
           derechos reservados</span>
       </p>
-      <p class="text-muted"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con el soporte de Bootstrap Material Design 4 y GitHub Pages</span>
+      <p class="text-muted"><span style="text-shadow: 0 0 6px #000000;">Desarrollada con ❤️, Bootstrap Material Design 4 y GitHub Pages</span>
       </p>
-    </div>
   </footer>
 
   <!-- =================================================================== -->
