@@ -54,11 +54,14 @@
         data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span><img src="img/menu.png" width="28" height="28" alt=""></span>
       </button>
-
+  
       <div class="navbar-collapse collapse" id="navbarsExample05">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#trayectoria">&nbsp;&nbsp;&nbsp;Experiencias&nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-link" href="#sobremi">&nbsp;&nbsp;&nbsp;Sobre mí&nbsp;&nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trayectoria">&nbsp;&nbsp;&nbsp;Experiencia&nbsp;&nbsp;&nbsp;</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#proyectos">&nbsp;&nbsp;&nbsp;Proyectos&nbsp;&nbsp;&nbsp;</a>
@@ -78,7 +81,6 @@
         </form>
       </div>
     </nav>
-
   </header>
 
   <main role="main">
@@ -90,11 +92,11 @@
         <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
         <h1 class="jumbotron-heading text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:white;">Juan
             Pablo González</span></h1>
-        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%; color:white;">Tecnología, UX/UI, edición y fotografía</span></p>
+        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%; color:white;">Software / Computer Science Engineer</span></p>
         <div class="align-items-center">
           <a tabindex="0" class="btn btn-raised btn-dark" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom"
-            title="Gracias por contactar :)" data-content="¡Gracias por enviarme un mail, contestaré lo más pronto posible, lo prometo!"
-            href="mailto:jpaglez.fujitsu@gmail.com">Contactar  /  solicitar currículum</a>
+            title="Gracias por contactar" data-content="Gracias por enviarme un mail, contestaré lo más pronto posible, ¡lo prometo!"
+            href="mailto:jpaglez.fujitsu@gmail.com" target="_blank">Contactar  /  solicitar currículum</a>
         </div>
         <br><br><img class="scrollDown" src="img/scrolldown_white.gif" height="12%" width="12%">
       </div>
@@ -109,14 +111,26 @@
     </div>
 
     <div class="album py-3 bg-light">
+      <div class="container scrollspy" id="sobremi">
+        <br>
+        <hr><br>
+        <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Sobre mí.</span></h1>
+        <p class="text-muted"><span class="robotoMono">Este soy yo, esto es lo que sé.</span></p><br>
+      </div>
+      <div class="container">
+        <div w3-include-html="/views/timeline.html"></div>
+      </div>
+    </div>
+
+    <div class="album py-3 bg-light">
       <div class="container scrollspy" id="trayectoria">
         <br>
         <hr><br>
         <h1 class="jumbotron-heading"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">Experiencias.</span></h1>
-        <p class="text-muted"><span class="robotoMono">Mi trayectoria hasta el momento.</span></p><br>
+        <p class="text-muted"><span class="robotoMono">Mi experiencia laboral hasta el momento.</span></p><br>
       </div>
       <div class="container">
-        <p style="text-align: center;">  -  muy pronto  -  </p>
+        <div w3-include-html="views/timeline.html"></div>
       </div>
     </div>
 
@@ -354,6 +368,41 @@
 
   <!-- =================================================================== -->
   <!-- Scripts, placed at the end of the document so the pages load faster -->
+  <!-- =================================================================== -->
+
+  <!-- Import include html function to make my web modular -->
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <script>
+    includeHTML();
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -382,6 +431,7 @@
       outDuration: 500
     });
   </script>
+
   <!-- POPOVERS SCRIPT -->
   <script>
     $(function () {
