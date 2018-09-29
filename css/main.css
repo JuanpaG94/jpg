@@ -73,7 +73,7 @@ body{
   background-color: #212121;
 }
 
-@media (max-width: 1100px){
+@media (min-width: 768px){
   .navbar-nav{
       margin: 0 auto;
       table-layout: fixed;
