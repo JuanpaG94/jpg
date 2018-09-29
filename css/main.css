@@ -32,6 +32,31 @@
 
 
 /* CUSTOM CSS STYLES MODIFIED BY JPG */
+.mySkills-name{
+  color: #4285f4;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 3px !important;
+  margin: 0 0 .5em 0 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  font-family: 'Roboto Mono', monospace !important;
+}
+
+.mySkills-desc{
+  color: #212121;
+  font-weight: bold;
+  white-space: nowrap !important;
+  font-family: 'Roboto Mono', monospace !important;
+}
+
+@media (max-width: 1100px) {
+  .container-mySkills{
+    display: unset !important;
+    justify-content: unset !important;
+  }
+}
+
 .robotoMono{
   font-family: 'Roboto Mono', monospace !important;
 }
@@ -48,7 +73,7 @@ body{
   background-color: #212121;
 }
 
-@media (min-width: 768px){
+@media (max-width: 1100px){
   .navbar-nav{
       margin: 0 auto;
       table-layout: fixed;
