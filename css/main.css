@@ -116,13 +116,13 @@ body{
 }
 
 .card-img-top{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .card-img-bottom{
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 #bgImage {
