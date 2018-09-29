@@ -34,10 +34,10 @@
   <link href="css/components/_materialbox.scss" rel="stylesheet">
 
   <!-- Import fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
   </style>
 
 </head>
@@ -52,30 +52,36 @@
   <main role="main">
     <section class="mainSection text-center">
       <div class="container" id="presentation">
-        <video autoplay muted loop id="bgVideo">
-          <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4">
-        </video><br><br>
+        <img src="/img/bg2.jpg" id="bgImage">
+        <br><br>
+
         <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
-        <h1 class="jumbotron-heading text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:white;">Juan
+        <br>
+        <h1 class="jumbotron-heading text-dark"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%;">Juan
             Pablo González</span></h1>
-        <p class="lead text-white"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%; color:white;">Software
-            & Computer Science Engineer</span></p>
+        <p class="lead text-dark"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%;">Software Engineer</span></p>
+
         <div class="align-items-center">
-          <a tabindex="0" class="btn btn-raised btn-secondary" role="button" data-toggle="popover" data-trigger="focus"
-            data-placement="bottom" title="Gracias por contactar" data-content="Gracias por enviarme un mail, contestaré lo más pronto posible, ¡lo prometo!"
-            href="mailto:jpaglez.fujitsu@gmail.com" target="_blank">Contactar / solicitar currículum</a>
+          <button type="button" class="btn btn-raised btn-sm btn-round btn-dark"><img src="img/cellphone-link.png"
+              height="14" width="14">&nbsp;Tech</button>&nbsp;
+          <button type="button" class="btn btn-raised btn-sm btn-round btn-dark"><img src="img/image.png" height="14"
+              width="14">&nbsp;Design</button>&nbsp;
+          <button type="button" class="btn btn-raised btn-sm btn-round btn-dark"><img src="img/television-guide.png"
+              height="14" width="14">&nbsp;UX/UI</button>&nbsp;
+          <button type="button" class="btn btn-raised btn-sm btn-round btn-dark"><img src="img/camera-iris.png" height="14"
+              width="14">&nbsp;Photo</button>
         </div>
-        <br><br><img class="scrollDown" src="img/scrolldown_white.gif" height="12%" width="12%">
+
+        <br><br>
+        <div class="align-items-center">
+          <a tabindex="0" class="btn btn-raised btn-round btn-materialblue" role="button" data-toggle="popover"
+            data-trigger="focus" data-placement="bottom" title="Gracias por contactar" data-content="Gracias por enviarme un mail, contestaré lo más pronto posible, ¡lo prometo!"
+            href="mailto:jpaglez.fujitsu@gmail.com" target="_blank"><img src="img/email.png" height="14" width="14">&nbsp;Contactar
+            / solicitar currículum</a>
+        </div>
+        <br><img class="scrollDown" src="img/scrolldown.gif" height="12%" width="12%">
       </div>
     </section>
-
-    <div class="bg-greyblack" id="navbarHeader">
-      <div class="container">
-        <div class="col-sm-10 col-md-12">
-          <p class="text-white text-muted">
-        </div>
-      </div>
-    </div>
 
     <div class="album bg-light">
       <div class="container scrollspy" id="sobremi">
@@ -159,9 +165,9 @@
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src="img/photos/morePhotos.jpg">
               <div class="card-body">
-                <p class="card-text">Tengo muchas más fotos impresionantes como estas. ¡Si quieres ver todas, visita mi
-                  álbum
-                  en Google Fotos!</p>
+                <p class="card-text"><b>Tengo más fotos impresionantes como estas. ¡Visita mi
+                    álbum
+                    en Google Fotos!</b></p>
                 <a href="https://goo.gl/photos/GhBZtJ3QP9zfk7fW7" target="_blank" class="btn btn-raised btn-info my-2">Ver
                   más
                 </a>
