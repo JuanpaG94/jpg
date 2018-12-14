@@ -29,9 +29,11 @@
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/main.css" rel="stylesheet">
   <link href="css/components/_materialbox.scss" rel="stylesheet">
+  <!-- AOS - Scrolling effects -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Import fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
@@ -49,7 +51,7 @@
     <div w3-include-html="views/navbar.html"></div>
   </header>
 
-  <main role="main">
+  <main role="main" data-aos="fade-in" data-aos-duration="1300">
     <section class="mainSection text-center">
       <div class="container" id="presentation">
         <img src="img/web/monochrome-material.jpg" id="bgImage">
@@ -63,29 +65,30 @@
             Engineer</span></p>
         <br>
         <div class="align-items-center">
-          <span class="badge badge-pill badge-dark">Desarrollo Software</span>
-          <span class="badge badge-pill badge-dark">Diseño y edición</span>
-          <span class="badge badge-pill badge-dark">UX/UI</span>
-          <span class="badge badge-pill badge-dark">Fotografía</span>
+          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1200">Desarrollo Software</span>
+          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1200">Diseño y edición</span>
+          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">UX/UI</span>
+          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1200">Fotografía</span>
         </div>
 
         <br><br>
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">
           <a tabindex="0" class="btn btn-raised btn-round btn-materialblue justify-content-center d-flex align-items-center"
             role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Gracias por tu mail"
             data-content="¡Te prometo contestar lo más pronto posible! ;)" href="mailto:jpaglez.fujitsu@gmail.com"
             target="_blank"><img src="img/email-outline.png" height="22" width="22">&nbsp;&nbsp;Contactar
             / solicitar CV completo</a>
         </div>
-        <br><img class="scrollDown" src="img/scrolldown.gif" height="11%" width="11%">
+        <br>
+          <img class="scrollDown" src="img/scrolldown.gif" height="11%" width="11%">
       </div>
     </section>
 
     <div class="album bg-light">
       <div class="container-mySkills d-flex justify-content-center text-center" style="padding:4%; padding-bottom:1%;">
 
-        <div style="padding-right:2%; padding-left:2%;">
-          <button type="button" class="btn btn-light bmd-btn-fab">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+          <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
             <img src="img/myskills/outline_build_black_48dp.png" height="38" width="38">
           </button>
           <br>
@@ -93,8 +96,8 @@
           <p class="mySkills-desc">Metodologías ágiles.<br>Centrado en la calidad.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%;">
-          <button type="button" class="btn btn-light bmd-btn-fab">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+          <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
               <img src="img/myskills/outline_movie_creation_black_48dp.png" height="38" width="38">
           </button>
           <br>
@@ -102,8 +105,8 @@
           <p class="mySkills-desc">Edicion de imagen y montaje <br>de vídeo a gran nivel.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%;">
-          <button type="button" class="btn btn-light bmd-btn-fab">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+          <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
               <img src="img/myskills/outline_phonelink_black_48dp.png" height="38" width="38">
           </button>
           <br>
@@ -111,8 +114,8 @@
           <p class="mySkills-desc">Especialista en Front-End.<br>Las mejores guías de diseño.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%;">
-          <button type="button" class="btn btn-light bmd-btn-fab">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="40" data-aos-duration="1200">
+          <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
               <img src="img/myskills/outline_camera_black_48dp.png" height="38" width="38">
           </button>
           <br>
@@ -130,8 +133,8 @@
       </div>
       <div class="container text-center">
         <!-- IMPORT ABOUT ME -->
-        <div w3-include-html="views/aboutme.html"></div>
-        <br>Esta sección está bajo actualización, próximamente ofrecerá más contenido.
+        <div w3-include-html="views/aboutme.html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300"></div>
+        <br>En actualización, próximamente aquí habrá más contenido.
       </div>
     </div>
 
@@ -145,7 +148,7 @@
               descendente.</b></span></p><br>
       </div>
       <!-- IMPORT TIMELINE -->
-      <div w3-include-html="views/timeline.html"></div>
+      <div w3-include-html="views/timeline.html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300"></div>
     </div>
 
     <div class="album bg-light">
@@ -155,7 +158,7 @@
         <h1 class="jumbotron-heading text-center">
           <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">PORTFOLIO</span></h1>
         <p class="text-muted text-center"><span class="robotoMono"><b>Los proyectos en los que he estado trabajando.</b></span></p><br>
-        <!-- IMPORT PORTFOLIO -->
+        <!-- PORTFOLIO -->
         <div w3-include-html="views/portfolio.html"></div>
       </div>
     </div>
@@ -170,37 +173,37 @@
               mi tiempo libre.</b></span></p><br>
         <div class="row">
           <!-- GALERIA DE FOTOS -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top card-img-bottom materialboxed" src="img/photos/foto1.jpg">
             </div>
           </div>
           <!-- FOTO 2 -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top card-img-bottom materialboxed" src="img/photos/foto2.jpg">
             </div>
           </div>
           <!-- FOTO 3 -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top card-img-bottom materialboxed" src="img/photos/foto3.jpg">
             </div>
           </div>
           <!-- FOTO 4 -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top card-img-bottom materialboxed" src="img/photos/foto4.jpg">
             </div>
           </div>
           <!-- FOTO 5 -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top card-img-bottom materialboxed" src="img/photos/foto5.jpg">
             </div>
           </div>
           <!-- FOTO 6 (ALL) -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1300">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src="img/photos/morePhotos.jpg">
               <div class="card-body">
@@ -278,6 +281,12 @@
     })
 
     $('#example').popover(options)
+  </script>
+
+  <!-- AOS Scroling SCRIPT -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 
 </body>
