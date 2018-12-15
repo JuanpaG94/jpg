@@ -32,6 +32,20 @@
 
 
 /* CUSTOM CSS STYLES MODIFIED BY JPG */
+.container-fluid{
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.sectionHeadline{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900; 
+  text-shadow: 1px 1px 2px #dddddd; 
+  font-size: 70%; 
+  color:rgb(22, 22, 22); 
+  letter-spacing: 1px;
+}
+
 .mySkills-name{
   color: #4285f4;
   font-weight: bold;
@@ -180,7 +194,12 @@ body{
   	width: unset !important;
   }
   #presentation{
-    padding-top: 10% !important;
+    padding-top: 4% !important;
+    text-align: center !important;
+  }
+  #desktopText{
+    text-align: center !important;
+    font-size: 80% !important;
   }
 }
 

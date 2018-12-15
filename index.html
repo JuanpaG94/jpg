@@ -36,52 +36,67 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Import fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900');
   </style>
 
 </head>
 
 <body>
-
   <header style="margin-top: 4%;" class="scrollspy" id="pageTop">
-    <!-- NAVBAR -->
+    <!-- IMPORT NAVBAR -->
     <div w3-include-html="views/navbar.html"></div>
   </header>
 
   <main role="main" data-aos="fade-in" data-aos-duration="1300">
-    <section class="mainSection text-center">
-      <div class="container" id="presentation">
-        <img src="img/web/monochrome-material.jpg" id="bgImage">
-        <br><br>
+    <section class="mainSection">
+        <div class="container" id="presentation" style="padding-left: 5%;">
+          <img src="img/web/monochrome-material.jpg" id="bgImage">
+          <hr style="visibility: hidden;"><br>
 
-        <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
-        <br>
-        <h1 class="jumbotron-heading text-dark"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%;">Juan
-            Pablo González</span></h1>
-        <p class="lead text-dark"><span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 95%;">Software
-            Engineer</span></p>
-        <br>
-        <div class="align-items-center">
-          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1200">Desarrollo Software</span>
-          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1200">Diseño y edición</span>
-          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">UX/UI</span>
-          <span class="badge badge-pill badge-dark" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1200">Fotografía</span>
-        </div>
+          <!-- DESKTOP -->
+          <div data-aos="fade-in" data-aos-delay="2000" data-aos-duration="1200" id="desktopText" style="text-align: right; font-weight: 300; text-shadow: 1px 1px 2px #dddddd; font-size: 120%;">
+           'Simplicity is the ultimate form of sophistication'<br><span class="text-muted robotoMono" style="font-size: 60%;">-Leonardo da Vinci</span></div>
+          <br>
+          <p><img data-aos="fade-down" data-aos-delay="300" data-aos-duration="1200" class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
 
-        <br><br>
-        <div class="d-flex justify-content-center" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">
-          <a tabindex="0" class="btn btn-raised btn-round btn-materialblue justify-content-center d-flex align-items-center"
-            role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Gracias por tu mail"
-            data-content="¡Te prometo contestar lo más pronto posible! ;)" href="mailto:jpaglez.fujitsu@gmail.com"
-            target="_blank"><img src="img/email-outline.png" height="22" width="22">&nbsp;&nbsp;Contactar
-            / solicitar CV completo</a>
+          <div id="presentation" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1300">
+          <span class="sectionHeadline" style="font-size: 220% !important;">
+              Juan Pablo González</span>
+              <br>
+              <span class="robotoMono" style="color: #212121; font-weight: 900; text-shadow: 1px 1px 2px #dddddd; font-size: 120%;">
+              Software Engineer</span>
+          </div>
+
+          <br>
+
+          <div id="presentation" class="align-items-center">
+            <span class="badge badge-pill badge-dark robotoMono" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1300">Desarrollo de Software</span>&nbsp;
+            <span class="badge badge-pill badge-dark robotoMono" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1300">Diseño y edición</span>&nbsp;
+            <span class="badge badge-pill badge-dark robotoMono" data-aos="fade-down" data-aos-delay="700" data-aos-duration="1300">UX/UI</span>&nbsp;
+            <span class="badge badge-pill badge-dark robotoMono" data-aos="fade-down" data-aos-delay="800" data-aos-duration="1300">Fotografía</span>&nbsp;
+          </div>
+
+          <br>
+
+          <div data-aos="fade-down" data-aos-delay="900" data-aos-duration="1100">
+            <a tabindex="0" class="btn btn-raised btn-round btn-materialblue align-items-center"
+              role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Gracias por tu e-mail"
+              data-content="¡Prometo contestarte lo más pronto posible! ;)" href="mailto:jpaglez.fujitsu@gmail.com"
+              target="_blank">
+              <img src="img/email-outline.png" height="20" width="20">&nbsp;&nbsp;Contactar / solicitar CV</a>
+          </div>
+
+          <br>
+
+          <div class="text-center">
+            <img class="scrollDown" src="img/scrolldown.gif" height="11%" width="11%">
+          </div>
+
         </div>
         <br>
-          <img class="scrollDown" src="img/scrolldown.gif" height="11%" width="11%">
-      </div>
     </section>
 
     <div class="album bg-light">
@@ -123,18 +138,17 @@
           <p class="mySkills-desc">Siempre aprendiendo las<br>mejores técnicas.</p>
         </div>
     </div>
+    </div>
 
+    <div class="album bg-light">
       <div class="container scrollspy" id="sobremi">
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-center">
-          <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">SOBRE MÍ</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Lo que sé y lo que me gusta hacer.</b></span></p><br>
-      </div>
-      <div class="container text-center">
+          <span class="sectionHeadline">SOBRE MÍ</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Este soy yo, las cosas que me gustan y qué sé hacer.</b></span></p><br>
         <!-- IMPORT ABOUT ME -->
         <div w3-include-html="views/aboutme.html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300"></div>
-        <br>En actualización, próximamente aquí habrá más contenido.
       </div>
     </div>
 
@@ -143,7 +157,7 @@
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-center">
-          <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">EXPERIENCIA</span></h1>
+          <span class="sectionHeadline">EXPERIENCIA</span></h1>
         <p class="text-muted text-center"><span class="robotoMono"><b>Toda mi trayectoria hasta el momento. En orden
               descendente.</b></span></p><br>
       </div>
@@ -156,9 +170,9 @@
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-center">
-          <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">PORTFOLIO</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Los proyectos en los que he estado trabajando.</b></span></p><br>
-        <!-- PORTFOLIO -->
+          <span class="sectionHeadline">PORTFOLIO</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Estos son los proyectos en los que he estado trabajando.</b></span></p><br>
+        <!-- IMPORT PORTFOLIO -->
         <div w3-include-html="views/portfolio.html"></div>
       </div>
     </div>
@@ -168,8 +182,8 @@
         <br>
         <hr><br>
         <h1 class="jumbotron-heading text-center">
-          <span class="robotoMono" style="text-shadow: 1px 1px 2px #dddddd; font-size: 70%; color:black;">FOTOGRAFÍA</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Me gusta aprender sobre fotografía y hacerlas en
+          <span class="sectionHeadline">FOTOGRAFÍA</span></h1>
+        <p class="text-muted text-center"><span class="robotoMono"><b>Me gusta aprender cosas sobre fotografía y hacerlas en
               mi tiempo libre.</b></span></p><br>
         <div class="row" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1300">
           <!-- GALERIA DE FOTOS -->
