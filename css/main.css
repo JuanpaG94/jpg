@@ -152,6 +152,11 @@ body{
   -webkit-transition:.3s;
   transition:.3s;
   box-shadow: 0 8px 16px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(109, 109, 109, 0.19);
+  -moz-transform: translate(0px, -5px);
+  -ms-transform: translate(0px, -5px);
+  -o-transform: translate(0px, -5px);
+  -webkit-transform: translate(0px, -5px);
+  transform: translate(0px, -5px);
 }
 
 .card-img-top{
@@ -198,8 +203,7 @@ body{
     text-align: center !important;
   }
   #desktopText{
-    text-align: center !important;
-    font-size: 80% !important;
+    visibility: hidden;
   }
 }
 
