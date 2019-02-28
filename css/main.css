@@ -174,10 +174,6 @@ body{
   border-bottom-right-radius: 1em;
 }
 
-.card-temporal-emergency{
-  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("../img/photos/foto1.jpg");
-}
-
 #bgImage {
   position: fixed;
   top: 0%;
