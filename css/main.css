@@ -32,6 +32,11 @@
 
 
 /* CUSTOM CSS STYLES MODIFIED BY JPG */
+
+.container-fluid .row:nth-child(even) { /* FIX PERSONALIZADO */
+  background: transparent !important;
+}
+
 .container-fluid{
   background: transparent !important;
   background-color: transparent !important;
