@@ -299,7 +299,6 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
-
 /* BOOTSTRAP botones redondeados */
 .btn-round{
   padding: .84rem 2.14rem;
@@ -313,4 +312,33 @@ body{
 .btn-materialblue{
   background: #4285f4 !important;
   color: #fff !important;
+}
+
+/* JPG preloader */
+.loader{
+  z-index: 9999999;
+  -webkit-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loaderAnimation{
+  width: 320px;
+  filter: grayscale(100%);
 }
