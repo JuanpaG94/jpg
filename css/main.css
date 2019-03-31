@@ -89,7 +89,7 @@ body{
 }
 
 .bg-greyblack{
-  background-color: #212121;
+  background-color: #212121f6;
 }
 
 @media (min-width: 768px){
@@ -141,7 +141,7 @@ body{
 }
 
 .card{
-  border-radius: 1em;
+  border-radius: 0.25em;
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -150,7 +150,7 @@ body{
 }
 
 .card:hover{
-  border-radius: 1em;
+  border-radius: 0.25em;
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
@@ -164,14 +164,43 @@ body{
   transform: translate(0px, -3px);
 }
 
+.card-aboutme > div{
+  background-color: white;
+  opacity: 0;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+.card-aboutme:hover > div{
+  background-color: white;
+  opacity: 0.95;
+  -o-transition:.4s;
+  -ms-transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+.card-aboutme > div > p{
+  opacity: 0;
+}
+
+.card-aboutme:hover > div > p{
+  opacity: 1;
+  color: black;
+}
+
 .card-img-top{
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
 }
 
 .card-img-bottom{
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
 }
 
 #bgImage {
@@ -240,10 +269,10 @@ body{
 }
 
 .modal-content {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
 }
 
 .row{
