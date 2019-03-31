@@ -176,7 +176,7 @@ body{
 
 .card-aboutme:hover > div{
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.88;
   -o-transition:.4s;
   -ms-transition:.4s;
   -moz-transition:.4s;
