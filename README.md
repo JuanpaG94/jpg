@@ -10,6 +10,7 @@
 - Material Design Bootstrap v4.0 by FezVrasta:
 https://fezvrasta.github.io/bootstrap-material-design/
 - Some resources from MaterializeCSS: https://materializecss.com/
+- My creativity ;)
 
 Material Design Bootstrap is designed and built by @FezVrasta with the help of our contributors.
 Currently v4.1.1. Code licensed MIT, docs CC BY 3.0.
