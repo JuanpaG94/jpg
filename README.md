@@ -2,12 +2,12 @@
 - Repository dedicated to development of my personal & business website.
 
 # Technologies
-- Main: HTML5, CSS3, JS
+- Main: HTML 5, CSS 3, JavaScript
 - IDE: Visual Studio Code
 - Hosting: GitHub Pages
 
 # UI/UX:
-- Material Design Bootstrap v4.0 by FezVrasta:
+- Material Design Bootstrap v4.0 by FezVrasta (I've modified some styles):
 https://fezvrasta.github.io/bootstrap-material-design/
 - Some resources from MaterializeCSS: https://materializecss.com/
 - My creativity ;)
