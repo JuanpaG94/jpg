@@ -194,13 +194,13 @@ body{
 }
 
 .card-img-top{
-  border-top-left-radius: 0.25em;
-  border-top-right-radius: 0.25em;
+  border-top-left-radius: 0.35em;
+  border-top-right-radius: 0.35em;
 }
 
 .card-img-bottom{
-  border-bottom-left-radius: 0.25em;
-  border-bottom-right-radius: 0.25em;
+  border-bottom-left-radius: 0.35em;
+  border-bottom-right-radius: 0.35em;
 }
 
 #bgImage {
