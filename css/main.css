@@ -353,10 +353,12 @@ body{
   padding-bottom: 0.84rem;
   padding-left: 2.14rem;
   border-radius: 10em !important;
+  transition: 300ms;
 }
 
 .btn-round:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  transition: 300ms;
 }
 
 .btn-materialblue{
