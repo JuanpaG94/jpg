@@ -14,10 +14,15 @@
   <!-- Google Analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
         (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-124184208-1', 'auto');
     ga('set', 'forceSSL', true);
@@ -26,7 +31,8 @@
   <!-- End Google Analytics -->
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
   <!-- Custom styles -->
@@ -34,13 +40,6 @@
   <link href="css/components/_materialbox.scss" rel="stylesheet">
   <!-- AOS - Scrolling effects -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- Import fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900');
-  </style>
 
 </head>
 
@@ -56,56 +55,55 @@
 
   <main role="main">
     <section class="mainSection">
-        <div class="container" id="presentation" style="padding-left: 5%;">
-          <img src="img/web/monochrome-material.jpg" id="bgImage">
-          <hr style="visibility: hidden;"><br>
+      <div class="container" id="presentation" style="padding-left: 5%;">
+        <img src="img/web/monochrome-material.jpg" id="bgImage">
+        <hr style="visibility: hidden;"><br>
 
-          <!-- DESKTOP -->
-          <div data-aos="fade-in" data-aos-delay="2500" data-aos-duration="1200" id="desktopText" style="text-align: right; font-weight: 300; text-shadow: 1px 1px 2px #dddddd; font-size: 100%;">
-           'Simplicity is the ultimate form of sophistication'<br><span class="text-muted robotoMono" style="font-size: 60%;">-Leonardo da Vinci</span></div>
+        <!-- DESKTOP -->
+        <div data-aos="fade-in" data-aos-delay="2500" data-aos-duration="1200" id="desktopText"
+          style="text-align: right; font-weight: 300; text-shadow: 1px 1px 2px #dddddd; font-size: 100%;">
+          'Simplicity is the ultimate form of sophistication'<br><span class="text-muted "
+            style="font-size: 60%;">-Leonardo da Vinci</span></div>
+        <br>
+        <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
+
+        <div id="presentation">
+          <span class="sectionHeadline">
+            Juan Pablo González</span>
           <br>
-          <p><img class="profilePicture" height="12%" width="12%" src="img/web/jpg.jpg"></p>
-
-          <div id="presentation">
-          <span class="sectionHeadline" style="font-size: 160% !important;">
-              JUAN PABLO GONZÁLEZ</span>
-              <br>
-              <span class="robotoMono" style="color: #212121; font-weight: 900; text-shadow: 1px 1px 2px #dddddd; font-size: 120%;">
-              Software Engineer</span>
-          </div>
-
-          <br>
-
-          <div id="presentation" class="align-items-center">
-            <span class="badge badge-pill btn-materialblue robotoMono">Desarrollo de Software</span>&nbsp;
-            <span class="badge badge-pill badge-info robotoMono">Diseño y edición</span>&nbsp;
-            <span class="badge badge-pill badge-primary robotoMono">UX/UI</span>&nbsp;
-            <span class="badge badge-pill badge-dark robotoMono">Fotografía</span>&nbsp;
-          </div>
-
-          <br>
-
-          <div>
-            <a tabindex="0" class="btn btn-raised btn-round btn-materialblue align-items-center"
-              role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Gracias por tu e-mail"
-              data-content="¡Prometo contestarte lo más pronto posible! ;)" href="mailto:jpaglez@hotmail.com"
-              target="_blank">
-              <img src="img/email-outline.png" height="20" width="20">&nbsp;&nbsp;Contactar</a>
-          </div>
-
-          <br>
-
-          <div class="text-center">
-            <img class="scrollDown" src="img/scrolldown.gif" height="11%" width="11%">
-          </div>
-
+          <span class="sectionHeadlineSecondary">
+            Software Engineer</span>
         </div>
+
+        <br>
+
+        <div id="presentation" class="align-items-center">
+          <span class="badge badge-pill btn-materialblue ">Desarrollo de Software</span>&nbsp;
+          <span class="badge badge-pill badge-info ">Diseño y edición</span>&nbsp;
+          <span class="badge badge-pill badge-primary ">UX/UI</span>&nbsp;
+          <span class="badge badge-pill badge-dark ">Fotografía</span>&nbsp;
+        </div>
+
+        <br>
+
+        <div>
+          <a tabindex="0" class="btn btn-raised btn-round btn-materialblue align-items-center" role="button"
+            data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Gracias por tu e-mail"
+            data-content="¡Prometo contestarte lo más pronto posible! ;)" href="mailto:jpaglez@hotmail.com"
+            target="_blank">
+            <img src="img/email-outline.png" height="20" width="20">&nbsp;&nbsp;Contactar</a>
+        </div>
+
+        <br><br><br><br>
+
+      </div>
     </section>
 
     <div class="album">
       <div class="container-mySkills d-flex justify-content-center text-center" style="padding:4%; padding-bottom:1%;">
 
-        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80"
+          data-aos-duration="1200">
           <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
             <img src="img/myskills/outline_build_black_48dp.png" height="38" width="38">
           </button>
@@ -114,34 +112,37 @@
           <p class="mySkills-desc">Metodologías ágiles.<br>Centrado en la calidad.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80"
+          data-aos-duration="1200">
           <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
-              <img src="img/myskills/outline_movie_creation_black_48dp.png" height="38" width="38">
+            <img src="img/myskills/outline_movie_creation_black_48dp.png" height="38" width="38">
           </button>
           <br>
           <p class="mySkills-name">Diseño/edición</p>
           <p class="mySkills-desc">Edicion de imagen y montaje <br>de vídeo a gran nivel.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80" data-aos-duration="1200">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="80"
+          data-aos-duration="1200">
           <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
-              <img src="img/myskills/outline_phonelink_black_48dp.png" height="38" width="38">
+            <img src="img/myskills/outline_phonelink_black_48dp.png" height="38" width="38">
           </button>
           <br>
           <p class="mySkills-name">UX/UI</p>
           <p class="mySkills-desc">Enfoque en el Front-End.<br>Las mejores guías de diseño.</p>
         </div>
 
-        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="40" data-aos-duration="1200">
+        <div style="padding-right:2%; padding-left:2%; pointer-events: none;" data-aos="zoom-in" data-aos-delay="40"
+          data-aos-duration="1200">
           <button type="button" class="btn bmd-btn-fab" style="background: #EEEEEE">
-              <img src="img/myskills/outline_camera_black_48dp.png" height="38" width="38">
+            <img src="img/myskills/outline_camera_black_48dp.png" height="38" width="38">
           </button>
           <br>
           <p class="mySkills-name">Fotografía</p>
           <p class="mySkills-desc">Siempre aprendiendo las<br>mejores técnicas.</p>
         </div>
-    </div>
-    <br>
+      </div>
+      <br>
     </div>
 
     <div class="album bg-light">
@@ -149,19 +150,21 @@
         <br><br>
         <h1 class="jumbotron-heading text-center">
           <span class="sectionHeadline">SOBRE MÍ</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Este soy yo, las cosas que me gustan y qué sé hacer.</b></span></p><br>
+        <p class="text-muted text-center"><span class=""><b>Este soy yo, las cosas que me gustan y qué sé
+              hacer.</b></span></p><br>
         <!-- IMPORT ABOUT ME -->
-        <div w3-include-html="views/aboutme.html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300"></div>
+        <div w3-include-html="views/aboutme.html" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1300">
+        </div>
       </div>
     </div>
 
     <div class="album bg-light">
       <div class="container scrollspy" id="trayectoria">
         <br>
-        <hr><br>
+        <br>
         <h1 class="jumbotron-heading text-center">
           <span class="sectionHeadline">EXPERIENCIA</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Toda mi trayectoria hasta el momento. En orden
+        <p class="text-muted text-center"><span class=""><b>Toda mi trayectoria hasta el momento. En orden
               descendente.</b></span></p><br>
       </div>
       <!-- IMPORT TIMELINE -->
@@ -171,10 +174,11 @@
     <div class="album bg-light">
       <div class="container scrollspy" id="portfolio">
         <br>
-        <hr><br>
+        <br>
         <h1 class="jumbotron-heading text-center">
           <span class="sectionHeadline">PORTFOLIO</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Estos son los proyectos en los que he estado trabajando.</b></span></p><br>
+        <p class="text-muted text-center"><span class=""><b>Estos son los proyectos en los que he estado
+              trabajando.</b></span></p><br>
         <!-- IMPORT PORTFOLIO -->
         <div w3-include-html="views/portfolio.html"></div>
       </div>
@@ -183,10 +187,10 @@
     <div class="album bg-light">
       <div class="container scrollspy" id="fotografia">
         <br>
-        <hr><br>
+        <br>
         <h1 class="jumbotron-heading text-center">
           <span class="sectionHeadline">FOTOGRAFÍA</span></h1>
-        <p class="text-muted text-center"><span class="robotoMono"><b>Me gusta aprender cosas sobre fotografía y hacerlas en
+        <p class="text-muted text-center"><span class=""><b>Me gusta aprender cosas sobre fotografía y hacerlas en
               mi tiempo libre.</b></span></p><br>
         <div class="row" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1300">
           <!-- GALERIA DE FOTOS (class materialboxed restaura el zoom de materializeCSS) -->
@@ -224,10 +228,11 @@
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src="img/photos/morePhotos.jpg">
               <div class="card-body">
-                <p class="card-text robotoMono text-dark">Tengo más fotos impresionantes como estas. ¡Mira mi
+                <p class="card-text  text-dark">Tengo más fotos impresionantes como estas. ¡Mira mi
                   álbum completo!</p>
                 <div class="justify-content-center">
-                  <a href="https://goo.gl/photos/GhBZtJ3QP9zfk7fW7" target="_blank" class="btn btn-raised btn-round btn-materialblue d-flex justify-content-center align-items-center">
+                  <a href="https://goo.gl/photos/GhBZtJ3QP9zfk7fW7" target="_blank"
+                    class="btn btn-raised btn-round btn-materialblue d-flex justify-content-center align-items-center">
                     <img src="img/open-in-app.png" height="22" width="22">&nbsp;&nbsp;Ver más
                   </a>
                 </div>
@@ -251,18 +256,26 @@
 
   <!-- Import include html function to make my web modular -->
   <script src="js/w3-include.js"></script>
-  <script>includeHTML();</script>
+  <script>
+    includeHTML();
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-    crossorigin="anonymous"></script>
-  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('body').bootstrapMaterialDesign();
+    });
+  </script>
 
   <!-- Page loader -->
   <script type="text/javascript">
-    document.onload = $(function(){
+    document.onload = $(function () {
       setTimeout('$(".loader").fadeOut(520);', 1300);
     });
   </script>
